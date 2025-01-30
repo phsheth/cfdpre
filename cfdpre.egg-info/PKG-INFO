@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cfdpre
+Version: 0.1
+Summary: CFD PreProcessing Library
+Author: Pushkar Sheth
+Author-email: siglyserdev@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: CoolProp
+
+# CFD-Pre
+CFD PreProcessing Library. 
+
+Provides the following functionality:
+1. Calculate Boundary Layer Mesh dimensions.
+
+
+
+
+## Project Log
+January 2025:
+1. Created Library
+
+
+## Project Road Map:
+
+1. Documentation for existing functionality.
+2. Include example data within library.
