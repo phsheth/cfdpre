@@ -21,6 +21,42 @@ https://pypi.org/project/cfdpre/)
 
 - The Python module can also be installed using pip on Windows, macOS, and Linux.
 
+
+Usage
+=====
+
+```python
+from cfdpre import yhgrcalc
+yhgrcalc('Air', 50, 10, 2.5, 125, 1, 8)
+```
+
+Output:
+```
+{'fluid': 'Air',
+ 'temperature [C]': 50,
+ 'pressure [bar]': 10,
+ 'massflow [kg/sec]': 2.5,
+ 'hydraulicdia [mm]': 125,
+ 'target yplus': 1,
+ 'number of layers': 8,
+ 'dynvisc [N-sec/m^2]': 1.9762497305390764e-05,
+ 'thermal conductivity [W/m-k]': 0.028357331300649127,
+ 'specific heat [cp] [J/kg-k]': 1019.3146170790077,
+ 'density [kg/m^3]': 10.792698589669245,
+ 'kinematic viscosity [m^2/s]': 1.8310987878701066e-06,
+ 'flow velocity [m/sec]': 18.875569021507275,
+ 'reynolds number': 1288541.1444310248,
+ 'prandtl number': 0.7103701741111368,
+ 'skin friction coefficient [cf]': 0.0035835733898580227,
+ 'wall shear stress [tau_wall]': 6.889956204766106,
+ 'yplus [m]': 2.2917570116263887e-06,
+ 'first layer height [m]': 4.5835140232527775e-06,
+ 'Growth Ratio': 2.3120331242085856,
+ 'Final Layer Thickness [m]': 0.0016186648187374525}
+```
+
+
+
 Documentation
 =============
 

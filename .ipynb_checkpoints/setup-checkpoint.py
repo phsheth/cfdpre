@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='cfdpre',
-    version='0.2',
+    version='0.2.1',
     description='CFD PreProcessing Library',
     author='Pushkar Sheth',
     author_email='siglyserdev@gmail.com',
