@@ -69,30 +69,42 @@ def yhgrcalc(fluid, temperature_c, pressure_bar, massflow_kgpersec, hydraulicdia
     tau_wall = 0.5 * density_kgperm3 * np.square(flowvelocity_mpersec) * cf # wall shear stress
     u_tau = np.sqrt(tau_wall/density_kgperm3) #friction velocity
     yp_m = (target_yplus * dynvisc_nsm2)  /(u_tau * density_kgperm3)
-    yh_m = yp_m * 2
-
-    
-    
+    yh_m = yp_m * 2   
 
     if reynolds < 5e5:
-
         delta99 = 4.91 * hydraulicdia_m / np.sqrt(reynolds)
-
     else:
-
         delta99 = 0.38 * hydraulicdia_m * reynolds**(-1/5)
 
-    
     growth_ratio = newton_raphson(num_layers, delta99, yh_m)
     final_layer_thickness_m = yh_m * growth_ratio**(num_layers - 1)
-    propdict = [density_kgperm3, specific_heat_cp_jperkgk, thermal_conductivity_wpermk, dynvisc_nsm2]
-    
-    return yh_m, growth_ratio, final_layer_thickness_m, reynolds, propdict
-
-
-
     
 
+    result = {
+        'fluid' : fluid,
+        'temperature [C]' : temperature_c,
+        'pressure [bar]' : pressure_bar,
+        'massflow [kg/sec]' : massflow_kgpersec,
+        'hydraulicdia [mm]' : hydraulicdia_mm,
+        'target yplus' : target_yplus,
+        'number of layers' : num_layers,
+        'dynvisc [N-sec/m^2]' : dynvisc_nsm2,
+        'thermal conductivity [W/m-k]' : thermal_conductivity_wpermk,
+        'specific heat [cp] [J/kg-k]' : specific_heat_cp_jperkgk,
+        'density [kg/m^3]' : density_kgperm3,
+        'kinematic viscosity [m^2/s]' : kinevisc_m2s,
+        'flow velocity [m/sec]' : flowvelocity_mpersec,
+        'reynolds number' : reynolds,
+        'prandtl number' : prandtl,
+        'skin friction coefficient [cf]' : cf,
+        'wall shear stress [tau_wall]' : tau_wall,
+        'yplus [m]' : yp_m,
+        'first layer height [m]' : yh_m,
+        'Growth Ratio' : growth_ratio,
+        'Final Layer Thickness [m]' : final_layer_thickness_m
+    }
+    
+    return result
 
 
 
