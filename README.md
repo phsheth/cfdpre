@@ -1,8 +1,10 @@
-# CFDPre
+<h1 align="center">
+<img src="cfdprelogo.png" width="300">
+</h1><br>
 
 
 What is CFDPre?
-================
+----------------------
 
 CFDPre is an open-source collection of object-oriented software tools for
 calculating boundary layer mesh dimensions for Computational Fluid Dynamics simulations.
@@ -12,18 +14,21 @@ Among other things, it can be used to:
 
 
 Installation
-============
+----------------------
 
-[![PyPI Downloads](https://img.shields.io/pypi/v/cfdpre?label=PyPI%20downloads)](
-https://pypi.org/project/cfdpre/)
+[![Install](https://img.shields.io/pypi/v/cfdpre?label=CFDPre)](
+https://pypi.org/project/cfdpre/) [![PyPI Downloads](https://img.shields.io/pypi/dm/cfdpre?label=PyPI%20Downloads)](
+https://pypistats.org/packages/cfdpre)
 
+In your command line, within Python environment:
+```pythom
     pip install cfdpre
-
+```
 - The Python module can also be installed using pip on Windows, macOS, and Linux.
 
 
 Usage
-=====
+----------------------
 
 ```python
 from cfdpre import yhgrcalc
@@ -31,7 +36,7 @@ yhgrcalc('Air', 50, 10, 2.5, 125, 1, 8)
 ```
 
 Output:
-```
+```python
 {'fluid': 'Air',
  'temperature [C]': 50,
  'pressure [bar]': 10,
@@ -55,35 +60,29 @@ Output:
  'Final Layer Thickness [m]': 0.0016186648187374525}
 ```
 
-
-
 Documentation
-=============
+----------------------
 
 In progress - not yet made!
 
-Users' Group
-============
 
 - **Users Group:** https://groups.google.com/g/cfdpre
-
-Source Code
-===========
-
 - **Source code:** https://github.com/phsheth/cfdpre
 
-Call for Contributions
+Call for Contributors
 ----------------------
 
-The CFDPre project welcomes your expertise and enthusiasm! Better to discuss before strarting to contribute!
+The CFDPre project welcomes your expertise and enthusiasm! Better to discuss on the users group before starting to contribute!
 
 
-## Project Log
+Project Log
+----------------------
 January 2025:
 1. Created Library
 
 
-## Project Road Map:
+Project RoadMap:
+----------------------
 
 1. Documentation for existing functionality.
 2. Include example data within library.
