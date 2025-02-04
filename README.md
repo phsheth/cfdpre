@@ -52,12 +52,12 @@ Output:
  'flow velocity [m/sec]': 18.875569021507275,
  'reynolds number': 1288541.1444310248,
  'prandtl number': 0.7103701741111368,
- 'skin friction coefficient [cf]': 0.0035835733898580227,
- 'wall shear stress [tau_wall]': 6.889956204766106,
- 'yplus [m]': 2.2917570116263887e-06,
- 'first layer height [m]': 4.5835140232527775e-06,
+ 'skin friction coefficient [cf]': 0.003583573389858024,
+ 'wall shear stress [tau_wall]': 6.889956204766108,
+ 'height of cell centroid from wall [yp] [m]': 2.2917570116263883e-06,
+ 'first layer height [yh] [m]': 4.583514023252777e-06,
  'Growth Ratio': 2.3120331242085856,
- 'Final Layer Thickness [m]': 0.0016186648187374525}
+ 'Final Layer Thickness [m]': 0.0016186648187374523}
 ```
 
 Documentation
