@@ -98,8 +98,8 @@ def yhgrcalc(fluid, temperature_c, pressure_bar, massflow_kgpersec, hydraulicdia
         'prandtl number' : prandtl,
         'skin friction coefficient [cf]' : cf,
         'wall shear stress [tau_wall]' : tau_wall,
-        'yplus [m]' : yp_m,
-        'first layer height [m]' : yh_m,
+        'height of cell centroid from wall [yp] [m]' : yp_m,
+        'first layer height [yh] [m]' : yh_m,
         'Growth Ratio' : growth_ratio,
         'Final Layer Thickness [m]' : final_layer_thickness_m
     }

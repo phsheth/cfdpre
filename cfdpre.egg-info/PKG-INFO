@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cfdpre
-Version: 0.2.2
+Version: 0.2.3
 Summary: CFD PreProcessing Library
 Author: Pushkar Sheth
 Author-email: siglyserdev@gmail.com
@@ -9,7 +9,7 @@ Requires-Dist: numpy
 Requires-Dist: CoolProp
 
 <h1 align="center">
-<img src="cfdprelogo.png" width="300">
+<img src="https://raw.githubusercontent.com/phsheth/cfdpre/refs/heads/main/cfdprelogo.png" width="300">
 </h1><br>
 
 
@@ -75,9 +75,12 @@ Documentation
 
 In progress - not yet made!
 
-
+- **Project Home Page:** https://cfdpre.github.io/ [under construction]
 - **Users Group:** https://groups.google.com/g/cfdpre
 - **Source code:** https://github.com/phsheth/cfdpre
+- **PyPI Page:** https://pypi.org/project/cfdpre/
+
+
 
 Call for Contributors
 ----------------------
